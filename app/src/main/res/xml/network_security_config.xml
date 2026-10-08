@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Las consolas (PS3/PS4/PS5) se comunican por HTTP en claro dentro de la
+         red local. Android 9+ bloquea el cleartext por defecto, lo que provoca
+         "http traffic to <ip> not permitted". Se permite para poder enlazar con
+         la consola. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
